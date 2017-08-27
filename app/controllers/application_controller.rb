@@ -11,7 +11,6 @@ class ApplicationController < ActionController::Base
     end
   end
   
-  
   def read(result)
     code = result["itemCode"]
     name = result["itemName"]
