@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.find(user_params)
+    @user = User.new(user_params)
     
     if @user.save
       flash[:success] = "ユーザーを登録しました。"
